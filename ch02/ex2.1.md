@@ -55,21 +55,26 @@ $$
 と$x,y$の積分を別々に考えればよい．
 
 まず$x$の積分についてのみ考え，$I'(y)$を求める．$y=0,1$では，$u=0$より明らかに$I'(0)=I'(1)=0$であるので，$y=\frac{1}{4},\frac{1}{2},\frac{3}{4}$について1次元の台形公式を用いて計算する．$y=\frac{1}{4}$において
-$$
-\begin{eqnarray}
-I'\left(\frac{1}{4}\right)&=&\frac{1}{4}\times\left[\frac{1}{2}\left\{u\left(0,\frac{1}{4}\right)\sin(2\pi\cdot0)+u\left(1,\frac{1}{4}\right)\sin(2\pi\cdot1)\right\}\right. \\
-&&+\left.\left\{u\left(\frac{1}{4},\frac{1}{4}\right)\sin(2\pi\cdot\frac{1}{4})+u\left(\frac{1}{2},\frac{1}{4}\right)\sin(2\pi\cdot\frac{1}{2})+u\left(\frac{3}{4},\frac{1}{4}\right)\sin(2\pi\cdot\frac{3}{4})\right\}\right] \\
-&=&\frac{1}{4}\times\left[\frac{1}{2}\{0+0\}+\left\{\frac{1}{2}\cdot1+\frac{3}{4}\cdot0+\frac{1}{4}\cdot(-1)\right\}\right] \\
-&=&\frac{1}{4}\times\frac{1}{4}=\frac{1}{16}
-\end{eqnarray}
-$$
+
+<div align="center">
+  <img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Beqnarray%7D%0AI%27%5Cleft%28%5Cfrac%7B1%7D%7B4%7D%5Cright%29%26%3D%26%5Cfrac%7B1%7D%7B4%7D%5Ctimes%5Cleft%5B%5Cfrac%7B1%7D%7B2%7D%5Cleft%5C%7Bu%5Cleft%280%2C%5Cfrac%7B1%7D%7B4%7D%5Cright%29%5Csin%282%5Cpi%5Ccdot0%29%2Bu%5Cleft%281%2C%5Cfrac%7B1%7D%7B4%7D%5Cright%29%5Csin%282%5Cpi%5Ccdot1%29%5Cright%5C%7D%5Cright.+%5Cnonumber+%5C%5C+%0A%26%26%2B%5Cleft.%5Cleft%5C%7Bu%5Cleft%28%5Cfrac%7B1%7D%7B4%7D%2C%5Cfrac%7B1%7D%7B4%7D%5Cright%29%5Csin%282%5Cpi%5Ccdot%5Cfrac%7B1%7D%7B4%7D%29%2Bu%5Cleft%28%5Cfrac%7B1%7D%7B2%7D%2C%5Cfrac%7B1%7D%7B4%7D%5Cright%29%5Csin%282%5Cpi%5Ccdot%5Cfrac%7B1%7D%7B2%7D%29%2Bu%5Cleft%28%5Cfrac%7B3%7D%7B4%7D%2C%5Cfrac%7B1%7D%7B4%7D%5Cright%29%5Csin%282%5Cpi%5Ccdot%5Cfrac%7B3%7D%7B4%7D%29%5Cright%5C%7D%5Cright%5D+%5Cnonumber+%5C%5C%0A%26%3D%26%5Cfrac%7B1%7D%7B4%7D%5Ctimes%5Cleft%5B%5Cfrac%7B1%7D%7B2%7D%5C%7B0%2B0%5C%7D%2B%5Cleft%5C%7B%5Cfrac%7B1%7D%7B2%7D%5Ccdot1%2B%5Cfrac%7B3%7D%7B4%7D%5Ccdot0%2B%5Cfrac%7B1%7D%7B4%7D%5Ccdot%28-1%29%5Cright%5C%7D%5Cright%5D+%5Cnonumber+%5C%5C%0A%26%3D%26%5Cfrac%7B1%7D%7B4%7D%5Ctimes%5Cfrac%7B1%7D%7B4%7D%3D%5Cfrac%7B1%7D%7B16%7D+%5Cnonumber%0A%5Cend%7Beqnarray%7D" 
+alt="\begin{eqnarray}
+I'\left(\frac{1}{4}\right)&=&\frac{1}{4}\times\left[\frac{1}{2}\left\{u\left(0,\frac{1}{4}\right)\sin(2\pi\cdot0)+u\left(1,\frac{1}{4}\right)\sin(2\pi\cdot1)\right\}\right. \nonumber \\ 
+&&+\left.\left\{u\left(\frac{1}{4},\frac{1}{4}\right)\sin(2\pi\cdot\frac{1}{4})+u\left(\frac{1}{2},\frac{1}{4}\right)\sin(2\pi\cdot\frac{1}{2})+u\left(\frac{3}{4},\frac{1}{4}\right)\sin(2\pi\cdot\frac{3}{4})\right\}\right] \nonumber \\
+&=&\frac{1}{4}\times\left[\frac{1}{2}\{0+0\}+\left\{\frac{1}{2}\cdot1+\frac{3}{4}\cdot0+\frac{1}{4}\cdot(-1)\right\}\right] \nonumber \\
+&=&\frac{1}{4}\times\frac{1}{4}=\frac{1}{16} \nonumber
+\end{eqnarray}">
+</div>
 ここで，式はじめの$\frac{1}{4}$は刻み幅，$\frac{1}{2}$の掛かっている項は端点での値，その他の項は中間の点での値である．同様に，$y=\frac{1}{2}$において
-$$
-\begin{eqnarray}
-I'\left(\frac{1}{2}\right)&=&\frac{1}{4}\times\left[\frac{1}{2}\{0+0\}+\left\{1\cdot1+\frac{7}{4}\cdot0+\frac{1}{2}\cdot(-1)\right\}\right] \\
-&=&\frac{1}{4}\times\frac{1}{2}=\frac{1}{8}
-\end{eqnarray}
-$$
+<div align="center">
+  <img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Beqnarray%7D%0AI%27%5Cleft%28%5Cfrac%7B1%7D%7B2%7D%5Cright%29%26%3D%26%5Cfrac%7B1%7D%7B4%7D%5Ctimes%5Cleft%5B%5Cfrac%7B1%7D%7B2%7D%5C%7B0%2B0%5C%7D%2B%5Cleft%5C%7B1%5Ccdot1%2B%5Cfrac%7B7%7D%7B4%7D%5Ccdot0%2B%5Cfrac%7B1%7D%7B2%7D%5Ccdot%28-1%29%5Cright%5C%7D%5Cright%5D+%5Cnonumber+%5C%5C%0A%26%3D%26%5Cfrac%7B1%7D%7B4%7D%5Ctimes%5Cfrac%7B1%7D%7B2%7D%3D%5Cfrac%7B1%7D%7B8%7D+%5Cnonumber%0A%5Cend%7Beqnarray%7D" 
+alt="\begin{eqnarray}
+I'\left(\frac{1}{2}\right)&=&\frac{1}{4}\times\left[\frac{1}{2}\{0+0\}+\left\{1\cdot1+\frac{7}{4}\cdot0+\frac{1}{2}\cdot(-1)\right\}\right] \nonumber \\
+&=&\frac{1}{4}\times\frac{1}{2}=\frac{1}{8} \nonumber
+\end{eqnarray}">
+</div>
 $y=\frac{3}{4}$において
 $$
 \begin{eqnarray}
@@ -122,6 +127,8 @@ I&=&\frac{1}{4}\times\left[\frac{1}{2}\left\{I'(0)\sin(\pi\cdot0)+I'(1)\sin(\pi\
 \end{eqnarray}
 $$
 これより
-$$
-a_{11}=4I=\frac{21+14\sqrt2}{32}\approx1.275
-$$
+<div align="center">
+  <img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+a_%7B11%7D%3D4I%3D%5Cfrac%7B21%2B14%5Csqrt2%7D%7B32%7D%5Capprox1.275" 
+alt="a_{11}=4I=\frac{21+14\sqrt2}{32}\approx1.275">
+</div>
